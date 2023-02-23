@@ -12,7 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="../img/" type="image/x-icon">
-    <title>Aris Bot</title>
+    <title>GiveawayS 🎉</title>
 </head>
 
 <body>
@@ -33,9 +33,9 @@
                         <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Links</a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
-                            <li><a class="dropdown-item text-muted" href="">Invite</a></li>
-                            <li><a class="dropdown-item text-muted" href="">Github</a></li>
-                            <li><a class="dropdown-item text-muted" href="">Vote</a></li>
+                            <li><a class="dropdown-item text-muted" href="https://discord.com/api/oauth2/authorize?client_id=900628889452314674&permissions=8&scope=applications.commands%20bot">Invite</a></li>
+                            <li><a class="dropdown-item text-muted" href="https://github.com/Aim2339/GiveawayS/">Github</a></li>
+                            <li><a class="dropdown-item text-muted" href="https://top.gg/bot/900628889452314674/vote">Vote</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -73,14 +73,12 @@
                     <hr />
                     <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderation Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Giveaway Commands</button>
                     
                         <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Leveling Commands</button>
-                    
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Commands</button>
-                    
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Fun Commands</button>
+                                        
                 </div>
             </div>
             <div class="col-md-8 my-2">
@@ -92,19 +90,19 @@
                     <div class="commands-section" id="Category0">
                         
                             
-                            <div class="accordion accordion-flush mt-2" id="ban">
+                            <div class="accordion accordion-flush mt-2" id="create">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fban">
-                                             /ban&nbsp; <span class="command-descreption">- ban a member</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcreate">
+                                             /create&nbsp; <span class="command-descreption">- Start a giveaway in your server!</span>
                                         </button>
                                     </h2>
-                                    <div id="fban" class="accordion-collapse collapse" data-bs-parent="#ban">
+                                    <div id="fcreate" class="accordion-collapse collapse" data-bs-parent="#create">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Usage Example: <required> or [optional]</span> <br />
                                             <span class="examples">
                                                 
-                                                    /ban @memebr<br>
+                                                    /create <duration> <winners> <prize> <channel> [activebonus] [pingrole] [bonusrole] [bonusamount] [reqrole] [thumbnail] [note]<br>
                                                 
                                             </span>
                                         </div>
