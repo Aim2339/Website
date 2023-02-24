@@ -77,10 +77,7 @@
                     
                         <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; ⚙️ General Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; 😂 Fun Commands</button>
-                    
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Commands</button>
-                    
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; 😂 Fun Commands</button>                    
                 </div>
             </div>
             <div class="col-md-8 my-2">
@@ -390,52 +387,7 @@
                         
                     </div>
                 
-                    
-                    <div class="commands-section" id="Category3">
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="reactionrole">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freactionrole">
-                                            <span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; /reactionrole&nbsp; <span class="command-description">- start the setup process for creating a reaction role</span>
-                                        </button>
-                                    </h2>
-                                    <div id="freactionrole" class="accordion-collapse collapse" data-bs-parent="#reactionrole">
-                                        <div class="accordion-body">
-                                            <span>Usage Example: [required] or {optional}</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /reactionrole
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="slowmode">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fslowmode">
-                                            <span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; /slowmode&nbsp; <span class="command-description">- add slowmode for a channel</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fslowmode" class="accordion-collapse collapse" data-bs-parent="#slowmode">
-                                        <div class="accordion-body">
-                                            <span>Usage Example: [required] or {optional}</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /slowmode :time
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                    </div>
+                
                 
             </div>
         </div>
@@ -485,7 +437,7 @@
             </footer>
         </div>
     
-    <input id="commands" value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Giveaway Commands&#34;,&#34;commands&#34;:[&#34;create&#34;,&#34;drop&#34;,&#34;edit&#34;,&#34;end&#34;,&#34;list&#34;,&#34;pause&#34;,&#34;reroll&#34;,&#34;resume&#34;,&#34;delete&#34;,&#34;log&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Premium Commands&#34;,&#34;commands&#34;:[&#34;reactionrole&#34;,&#34;slowmode&#34;]}]" hidden />
+    <input id="commands" value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Giveaway Commands&#34;,&#34;commands&#34;:[&#34;create&#34;,&#34;drop&#34;,&#34;edit&#34;,&#34;end&#34;,&#34;list&#34;,&#34;pause&#34;,&#34;reroll&#34;,&#34;resume&#34;,&#34;delete&#34;,&#34;log&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]},{&#34;title&#34;:&#34;]}]" hidden />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/fontawesome/all.min.js"></script>
     <script src="/js/animation.js"></script>
@@ -502,9 +454,6 @@
                 document.getElementById("CategoryBtn2").classList.remove("active");
                 document.getElementById("Category2").setAttribute("hidden", "");
             
-                document.getElementById("CategoryBtn3").classList.remove("active");
-                document.getElementById("Category3").setAttribute("hidden", "");
-            
             elm.classList.add("active");
             if(elm.id.replace("CategoryBtn", "") == "All"){
                 
@@ -513,9 +462,7 @@
                     document.getElementById("Category1").removeAttribute("hidden");
                 
                     document.getElementById("Category2").removeAttribute("hidden");
-                
-                    document.getElementById("Category3").removeAttribute("hidden");
-                
+                                
             }else{
                 document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
             }
