@@ -12,7 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="../img/" type="image/x-icon">
-    <title>Aris Bot</title>
+    <title>GiveawayS 🎉</title>
 </head>
 
 <body>
@@ -73,7 +73,7 @@
                     <hr />
                     <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderation Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; 🎉 Giveaway Commands</button>
                     
                         <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Commands</button>
                     
@@ -250,6 +250,46 @@
                                     <span class="examples">
                                         
                                             /resume [giveaway]
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush mt-2" id="delete">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdelete">
+                                     /delete&nbsp; <span class="command-description">- Delete an ended giveaway!</span>
+                                </button>
+                            </h2>
+                            <div id="fdelete" class="accordion-collapse collapse" data-bs-parent="#delete">
+                                <div class="accordion-body">
+                                    <span>Usage Example: [required] or {optional}</span> <br />
+                                    <span class="examples">
+                                        
+                                            /delete [giveaway]
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion accordion-flush mt-2" id="log">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flog">
+                                     /log&nbsp; <span class="command-description">- Create a log channel for giveaway logs!</span>
+                                </button>
+                            </h2>
+                            <div id="flog" class="accordion-collapse collapse" data-bs-parent="#log">
+                                <div class="accordion-body">
+                                    <span>Usage Example: [required] or {optional}</span> <br />
+                                    <span class="examples">
+                                        
+                                            /log
                                         
                                     </span>
                                 </div>
