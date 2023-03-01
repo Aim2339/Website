@@ -1,3 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --description-color: rgb(207, 207, 207);
+  --main-color: #4856ee;
+  --secondary-color: #626ffd;
+  --discord-color: #5865f2;
+  --background-main-color: #212529;
+  --card-background: #2a2d31;
+}
+
+body {
+  background: var(--background-main-color);
+  border-radius: 5px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
 .dropdown-menu {
   background-color: #212529;
   border: none;
@@ -151,8 +171,6 @@ hr {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #4856ee;
 }
 
-/* Sample card styling */
-
 .card {
   background-color: #2b2d30;
   color: #fff;
@@ -181,26 +199,6 @@ hr {
   margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #4856ee;
-  color: #fff;
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.btn:hover {
-  background-color: #3c48c5;
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transform: translateY(-10px);
@@ -212,23 +210,6 @@ hr {
   width: 100px;
   height: 100px;
   object-fit: cover;
-}
-
-nav {
-  animation: topToDown 1.5s ease-in;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.navbar-logo {
-  position: relative;
-  bottom: 6px;
-}
-
-.top-section {
-  margin-top: 13%;
 }
 
 @media only screen and (max-width: 767px) {
