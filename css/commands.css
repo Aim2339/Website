@@ -12,10 +12,6 @@
   --card-background: #2a2d31;
 }
 
-.badge-vip {
-  background-color: var(--main-color) !important;
-}
-
 body {
   background: var(--background-main-color);
   border-radius: 5px;
@@ -34,10 +30,6 @@ nav {
 .navbar-logo {
   position: relative;
   bottom: 6px;
-}
-
-.btn-login {
-  background-color: var(--main-color);
 }
 
 .top-section {
@@ -98,20 +90,6 @@ nav {
 }
 hr {
   border: 1px solid #626bcc;
-}
-
-.search-box {
-  background-color: #2f2f30;
-  outline: none;
-  border: none;
-  border-radius: 20px;
-  color: #ffffff;
-  padding: 10px 22px;
-  border: 2px solid #2f2f30;
-}
-
-.search-box:focus {
-  border: 2px solid var(--main-color);
 }
 
 .accordion-item {
