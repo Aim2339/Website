@@ -1,565 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/commands.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="shortcut icon" href="../img/" type="image/x-icon" />
+    <title>Commands - GiveawayS</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/commands.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="shortcut icon" href="../img/" type="image/x-icon">
-    <title>GiveawayS 🎉</title>
-</head>
-
-<body>
-
+  <body>
     <!-- Navbar -->
 
     <div class="navbar navbar-expand-md bg-dark navbar-dark">
-        <div class="container">
-            <a href="../index.html" class="navbar-brand text-info">GiveawayS</a>
+      <div class="container">
+        <a href="../index.html" class="navbar-brand text-info">GiveawayS</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
-                    class="navbar-toggler-icon"></span></button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="mainmenu">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Links</a>
-                        <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
-                            <li><a class="dropdown-item text-muted" href="">Invite</a></li>
-                            <li><a class="dropdown-item text-muted" href="">Github</a></li>
-                            <li><a class="dropdown-item text-muted" href="">Vote</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <li class="navbar-nav nav-item"><a href="" class="btn btn-outline-info">Login</a></li>
-            </div>
+        <div class="collapse navbar-collapse" id="mainmenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/team.html" class="nav-link">Team</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="linksdrop"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Links</a
+              >
+              <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
+                <li>
+                  <a
+                    class="dropdown-item text-muted"
+                    href="https://discord.com/oauth2/authorize?client_id=900628889452314674&permissions=8&scope=applications.commands%20bot"
+                    >Invite</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-muted"
+                    href="https://github.com/Aim2339/GiveawayS/"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-muted"
+                    href="https://top.gg/bot/900628889452314674/vote"
+                    >Vote</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
 
     <div class="container">
-        <section style="margin-top: 9%;">
-            <div class="row">
-                <div class="col-sm-6 my-1">
-                    <h2 class="fw-bold">GiveawayS Commands</h2>
-                    <p class="command-description">Find all the commands and information you need fast and easy</p>
-                </div>
-                <div class="col-sm-6 my-1">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4050940490843957" crossorigin="anonymous"></script>
-                    <!-- banner -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:100%;height:90px"
-                         data-ad-client="ca-pub-4050940490843957"
-                         data-ad-slot="6770580457"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </div>
-            <hr>
-        </section>
-        <div class="mt-4"></div>
+      <section style="margin-top: 9%">
         <div class="row">
-            <div class="col-md-4 my-2">
-                <div class="card p-3">
-                    <h5>Select Commands Category</h5>
-                    <hr />
-                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
-                    
-                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; 🎉 Giveaway Commands</button>
-                    
-                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; ⚙️ General Commands</button>
-                    
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp; 😂 Fun Commands</button>                    
-                </div>
-            </div>
-            <div class="col-md-8 my-2">
-                <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" />
-                
-                    
-                        <div class="mt-4"></div>
-                    
-                    <div class="commands-section" id="Category0">
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="create">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcreate">
-                                             /create&nbsp; <span class="command-description"> Start a giveaway in your server!</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fcreate" class="accordion-collapse collapse" data-bs-parent="#create">
-                                        <div class="accordion-body">
-                                            <span>Usage Example: [required] or {optional}</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /create [duration] [winners] [prize] [channel] {activebonus} {pingrole} {bonusrole} {bonusamount} {reqrole} {thumbnail} {note}<br>
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="drop">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdrop">
-                                             /drop&nbsp; <span class="command-description">- Create a drop giveaway!</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fdrop" class="accordion-collapse collapse" data-bs-parent="#drop">
-                                        <div class="accordion-body">
-                                            <span>Usage Example: [required] or {optional}</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /drop [winners] [prize] [channel]
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="edit">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fedit">
-                                             /edit&nbsp; <span class="command-description">- Edit an already running giveaway!</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fedit" class="accordion-collapse collapse" data-bs-parent="#edit">
-                                        <div class="accordion-body">
-                                            <span>Usage Example: [required] or {optional}</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /edit [giveaway] [duration] [winners] [prize]
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                            
-                    
-                    <div class="accordion accordion-flush mt-2" id="end">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fend">
-                                     /end&nbsp; <span class="command-description">- End an already running giveaway!</span>
-                                </button>
-                            </h2>
-                            <div id="fend" class="accordion-collapse collapse" data-bs-parent="#end">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /end [giveaway]
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion accordion-flush mt-2" id="list">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flist">
-                                     /list&nbsp; <span class="command-description">- List all the giveaways running within this server!</span>
-                                </button>
-                            </h2>
-                            <div id="flist" class="accordion-collapse collapse" data-bs-parent="#list">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /list
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="accordion accordion-flush mt-2" id="pause">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fpause">
-                                     /pause&nbsp; <span class="command-description">- Pause an already running giveaway!</span>
-                                </button>
-                            </h2>
-                            <div id="fpause" class="accordion-collapse collapse" data-bs-parent="#pause">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /pause [giveaway]
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion accordion-flush mt-2" id="reroll">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freroll">
-                                     /reroll&nbsp; <span class="command-description">- Reroll an ended giveaway!</span>
-                                </button>
-                            </h2>
-                            <div id="freroll" class="accordion-collapse collapse" data-bs-parent="#reroll">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /reroll [giveaway]
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="accordion accordion-flush mt-2" id="resume">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fresume">
-                                     /resume&nbsp; <span class="command-description">- Resume a paused giveaway!</span>
-                                </button>
-                            </h2>
-                            <div id="fresume" class="accordion-collapse collapse" data-bs-parent="#resume">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /resume [giveaway]
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion accordion-flush mt-2" id="delete">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdelete">
-                                     /delete&nbsp; <span class="command-description">- Delete an ended giveaway!</span>
-                                </button>
-                            </h2>
-                            <div id="fdelete" class="accordion-collapse collapse" data-bs-parent="#delete">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /delete [giveaway]
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion accordion-flush mt-2" id="log">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flog">
-                                     /log&nbsp; <span class="command-description">- Create a log channel for giveaway logs!</span>
-                                </button>
-                            </h2>
-                            <div id="flog" class="accordion-collapse collapse" data-bs-parent="#log">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /log
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                            <div class="commands-section" id="Category1">
-                            
-                                <div class="accordion accordion-flush mt-2" id="help">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
-                                                 /help&nbsp; <span class="command-description">- Shows all available commands to this bot!</span>
-                                            </button>
-                                        </h2>
-                                        <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
-                                            <div class="accordion-body">
-                                                <span>Usage Example: [required] or {optional}</span> <br />
-                                                <span class="examples">
-                                                    
-                                                        /help
-                                                    
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="invite">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finvite">
-                                             /invite&nbsp; <span class="command-description">- Get the bot's invite link!</span>
-                                        </button>
-                                    </h2>
-                                    <div id="finvite" class="accordion-collapse collapse" data-bs-parent="#invite">
-                                        <div class="accordion-body">
-                                            <span>Usage Example: [required] or {optional}</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /invite
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-
-                    <div class="accordion accordion-flush mt-2" id="ping">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fping">
-                                     /ping&nbsp; <span class="command-description">-  Check the bot's websocket latency!</span>
-                                </button>
-                            </h2>
-                            <div id="fping" class="accordion-collapse collapse" data-bs-parent="#ping">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /ping
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion accordion-flush mt-2" id="vote">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fvote">
-                                     /vote&nbsp; <span class="command-description">-  Vote for the bot!</span>
-                                </button>
-                            </h2>
-                            <div id="fvote" class="accordion-collapse collapse" data-bs-parent="#vote">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /vote
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion accordion-flush mt-2" id="links">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flinks">
-                                     /links&nbsp; <span class="command-description">-  Get a list of links related to the bot!</span>
-                                </button>
-                            </h2>
-                            <div id="flinks" class="accordion-collapse collapse" data-bs-parent="#links">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /links
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion accordion-flush mt-2" id="feedback">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ffeedback">
-                                     /feedback&nbsp; <span class="command-description">-  Send live feedback about the bot to the developer!</span>
-                                </button>
-                            </h2>
-                            <div id="ffeedback" class="accordion-collapse collapse" data-bs-parent="#feedback">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /feedback [message]
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion accordion-flush mt-2" id="stats">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fstats">
-                                     /stats&nbsp; <span class="command-description">-  Check the bot's physical statistics!</span>
-                                </button>
-                            </h2>
-                            <div id="fstats" class="accordion-collapse collapse" data-bs-parent="#stats">
-                                <div class="accordion-body">
-                                    <span>Usage Example: [required] or {optional}</span> <br />
-                                    <span class="examples">
-                                        
-                                            /stats
-                                        
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-      
-                    
-                    <div class="commands-section" id="Category2">
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="games">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgames">
-                                             /games&nbsp; <span class="command-description">- Play mini-games with the bot!</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fgames" class="accordion-collapse collapse" data-bs-parent="#games">
-                                        <div class="accordion-body">
-                                            <span>Usage Example: [required] or {optional}</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /games
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                    </div>
-                
-                
-                
-            </div>
+          <div class="col-sm-6 my-1">
+            <h2 class="fw-bold">GiveawayS Commands</h2>
+            <p class="command-description">
+              Find all the commands and information you need fast and easy
+            </p>
+          </div>
+          <div class="col-sm-6 my-1">
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4050940490843957"
+              crossorigin="anonymous"
+            ></script>
+            <!-- banner -->
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 100%; height: 90px"
+              data-ad-client="ca-pub-4050940490843957"
+              data-ad-slot="6770580457"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
         </div>
+        <hr />
+      </section>
+      <div class="mt-4"></div>
+      <div class="row">
+        <div class="col-md-4 my-2">
+          <div class="card p-3">
+            <h5>Select Commands Category</h5>
+            <hr />
+            <button
+              onclick="active(this)"
+              id="CategoryBtnAll"
+              class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
+            >
+              <i class="fad fa-icons ttt"></i>&nbsp; All Commands
+            </button>
+
+            <button
+              onclick="active(this)"
+              id="CategoryBtn0"
+              class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
+            >
+              <i class="fas fa-gift ttt"></i>&nbsp; 🎉 Giveaway Commands
+            </button>
+
+            <button
+              onclick="active(this)"
+              id="CategoryBtn1"
+              class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
+            >
+              <i class="fas fa-globe-europe ttt"></i>&nbsp; ⚙️ General Commands
+            </button>
+
+            <button
+              onclick="active(this)"
+              id="CategoryBtn2"
+              class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
+            >
+              <i class="fas fa-hammer-war ttt"></i>&nbsp; 😂 Fun Commands
+            </button>
+          </div>
+        </div>
+        <div class="col-md-8 my-2">
+          <div class="mt-4"></div>
+
+          <div class="commands-section" id="Category0">
+            <div class="accordion accordion-flush mt-2" id="create">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fcreate"
+                  >
+                    /create&nbsp;
+                    <span class="command-description">
+                      Start a giveaway in your server!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fcreate"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#create"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples">
+                      /create [duration] [winners] [prize] [channel]
+                      {activebonus} {pingrole} {bonusrole} {bonusamount}
+                      {reqrole} {thumbnail} {note}<br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="drop">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fdrop"
+                  >
+                    /drop&nbsp;
+                    <span class="command-description"
+                      >- Create a drop giveaway!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fdrop"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#drop"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples">
+                      /drop [winners] [prize] [channel]
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="edit">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fedit"
+                  >
+                    /edit&nbsp;
+                    <span class="command-description"
+                      >- Edit an already running giveaway!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fedit"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#edit"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples">
+                      /edit [giveaway] [duration] [winners] [prize]
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="end">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fend"
+                  >
+                    /end&nbsp;
+                    <span class="command-description"
+                      >- End an already running giveaway!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fend"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#end"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /end [giveaway] </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="list">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flist"
+                  >
+                    /list&nbsp;
+                    <span class="command-description"
+                      >- List all the giveaways running within this
+                      server!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flist"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#list"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /list </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="pause">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fpause"
+                  >
+                    /pause&nbsp;
+                    <span class="command-description"
+                      >- Pause an already running giveaway!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fpause"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#pause"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /pause [giveaway] </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="reroll">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#freroll"
+                  >
+                    /reroll&nbsp;
+                    <span class="command-description"
+                      >- Reroll an ended giveaway!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="freroll"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#reroll"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /reroll [giveaway] </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="resume">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fresume"
+                  >
+                    /resume&nbsp;
+                    <span class="command-description"
+                      >- Resume a paused giveaway!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fresume"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#resume"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /resume [giveaway] </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="delete">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fdelete"
+                  >
+                    /delete&nbsp;
+                    <span class="command-description"
+                      >- Delete an ended giveaway!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fdelete"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#delete"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /delete [giveaway] </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="log">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flog"
+                  >
+                    /log&nbsp;
+                    <span class="command-description"
+                      >- Create a log channel for giveaway logs!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flog"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#log"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /log </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="commands-section" id="Category1">
+            <div class="accordion accordion-flush mt-2" id="help">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fhelp"
+                  >
+                    /help&nbsp;
+                    <span class="command-description"
+                      >- Shows all available commands to this bot!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fhelp"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#help"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /help </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="invite">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#finvite"
+                  >
+                    /invite&nbsp;
+                    <span class="command-description"
+                      >- Get the bot's invite link!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="finvite"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#invite"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /invite </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-2" id="ping">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fping"
+                  >
+                    /ping&nbsp;
+                    <span class="command-description"
+                      >- Check the bot's websocket latency!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fping"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#ping"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /ping </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion accordion-flush mt-2" id="vote">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fvote"
+                  >
+                    /vote&nbsp;
+                    <span class="command-description">- Vote for the bot!</span>
+                  </button>
+                </h2>
+                <div
+                  id="fvote"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#vote"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /vote </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion accordion-flush mt-2" id="links">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flinks"
+                  >
+                    /links&nbsp;
+                    <span class="command-description"
+                      >- Get a list of links related to the bot!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flinks"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#links"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /links </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion accordion-flush mt-2" id="feedback">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#ffeedback"
+                  >
+                    /feedback&nbsp;
+                    <span class="command-description"
+                      >- Send live feedback about the bot to the
+                      developer!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="ffeedback"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#feedback"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /feedback [message] </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion accordion-flush mt-2" id="stats">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fstats"
+                  >
+                    /stats&nbsp;
+                    <span class="command-description"
+                      >- Check the bot's physical statistics!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fstats"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stats"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /stats </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="commands-section" id="Category2">
+            <div class="accordion accordion-flush mt-2" id="games">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fgames"
+                  >
+                    /games&nbsp;
+                    <span class="command-description"
+                      >- Play mini-games with the bot!</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="fgames"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#games"
+                >
+                  <div class="accordion-body">
+                    <span>Usage Example: [required] or {optional}</span> <br />
+                    <span class="examples"> /games </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
         <!-- footer -->
 
         <div class="footer-clean bg-dark">
-            <footer>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-sm-4 col-md-3 item">
-                            <h3>Quick access</h3>
-                            <ul>
-                                <li><a href="#Features">Features</a></li>
-                                <li><a href="#Statics">Statics</a></li>
-                                <li><a href="#FAQ">Ask me</a></li>
-                            </ul>
+          <footer>
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-sm-4 col-md-3 item">
+                          <h3>Quick access</h3>
+                          <ul>
+                              <li><a href="../index.html#Features">Features</a></li>
+                              <li><a href="../index.html#Statics">Statics</a></li>
+                              <li><a href="../index.html#FAQ">FAQ</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-4 col-md-3 item">
+                          <h3>About</h3>
+                          <ul>
+                              <li><a href="./pages/commands.html">Commands</a></li>
+                              <li><a href="./pages/team.html">Team</a></li>
+                              <li><a href="./LICENSE">License</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-4 col-md-3 item">
+                          <h3>Links</h3>
+                          <ul>
+                              <li><a href="https://top.gg/bot/900628889452314674/vote">Vote</a></li>
+                              <li><a href="https://discord.com/oauth2/authorize?client_id=900628889452314674&permissions=8&scope=applications.commands%20bot">Invite bot</a></li>
+                              <li><a href="https://github.com/Aim2339/GiveawayS" target="_blank" rel="noopener noreferrer">Github</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-3 item social"><a href="https://discord.com/users/756060979896385606" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-discord"></ion-icon></a><a href="https://github.com/Aim2339/GiveawayS" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                          <p class="copyright">GiveawayS © 2023</p>
+                      </div>
+                      <div class="page-footer font-small text-light mt-5">
+                        <div class="footer-copyright text-center">Made with 💖 by
+                            <a href="https://github.com/Aim2339/" target="_blank" rel="noopener noreferrer">Aim2339</a>
+                            © 2023 Copyright
+                          </div>
                         </div>
-                        <div class="col-sm-4 col-md-3 item">
-                            <h3>About</h3>
-                            <ul>
-                                <li><a href="./pages/commands.html">Commands</a></li>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">License</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4 col-md-3 item">
-                            <h3>Links</h3>
-                            <ul>
-                                <li><a href="#">Vote</a></li>
-                                <li><a href="#">Invite bot</a></li>
-                                <li><a href="#">Github</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 item social"><a href="#"><ion-icon name="logo-discord"></ion-icon></a><a href="#"><ion-icon name="logo-facebook"></ion-icon></a><a href="#"><ion-icon name="logo-twitter"></ion-icon></a><a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                            <p class="copyright">GiveawayS © 2023</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-footer font-small text-light mt-5">
-                <div class="footer-copyright text-center">Made with 💖 by
-                    <a href="https://github.com/Aim2339/">Aim2339</a>
-                    © 2023 Copyright
                   </div>
-                </div>
-            </footer>
-        </div>
-    
-    <input id="commands" value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Giveaway Commands&#34;,&#34;commands&#34;:[&#34;create&#34;,&#34;drop&#34;,&#34;edit&#34;,&#34;end&#34;,&#34;list&#34;,&#34;pause&#34;,&#34;reroll&#34;,&#34;resume&#34;,&#34;delete&#34;,&#34;log&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]},{&#34;title&#34;:&#34;]}]" hidden />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="/fontawesome/all.min.js"></script>
-    <script src="/js/animation.js"></script>
+              </div>
     <script>
-        function active(elm){
-            document.getElementById("CategoryBtnAll").classList.remove("active");
-            
-                document.getElementById("CategoryBtn0").classList.remove("active");
-                document.getElementById("Category0").setAttribute("hidden", "");
-            
-                document.getElementById("CategoryBtn1").classList.remove("active");
-                document.getElementById("Category1").setAttribute("hidden", "");
-            
-                document.getElementById("CategoryBtn2").classList.remove("active");
-                document.getElementById("Category2").setAttribute("hidden", "");
-            
-            elm.classList.add("active");
-            if(elm.id.replace("CategoryBtn", "") == "All"){
-                
-                    document.getElementById("Category0").removeAttribute("hidden");
-                
-                    document.getElementById("Category1").removeAttribute("hidden");
-                
-                    document.getElementById("Category2").removeAttribute("hidden");
-                                
-            }else{
-                document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
-            }
+      function active(elm) {
+        document.getElementById("CategoryBtnAll").classList.remove("active");
+
+        document.getElementById("CategoryBtn0").classList.remove("active");
+        document.getElementById("Category0").setAttribute("hidden", "");
+
+        document.getElementById("CategoryBtn1").classList.remove("active");
+        document.getElementById("Category1").setAttribute("hidden", "");
+
+        document.getElementById("CategoryBtn2").classList.remove("active");
+        document.getElementById("Category2").setAttribute("hidden", "");
+
+        elm.classList.add("active");
+        if (elm.id.replace("CategoryBtn", "") == "All") {
+          document.getElementById("Category0").removeAttribute("hidden");
+
+          document.getElementById("Category1").removeAttribute("hidden");
+
+          document.getElementById("Category2").removeAttribute("hidden");
+        } else {
+          document
+            .getElementById("Category" + elm.id.replace("CategoryBtn", ""))
+            .removeAttribute("hidden");
         }
-        document.getElementById("CategoryBtnAll").click();
-        function search(arg){
-            let commands = JSON.parse(document.getElementById("commands").value);
-            let cmds = [];
-            commands.forEach(category => {
-                category.commands.forEach(command => {
-                    cmds.push(command);
-                })
-            })
-            let existedCmds = cmds.filter(obj => obj.includes(arg.toLowerCase()));
-            cmds.forEach(cmd => {
-                document.getElementById(cmd).setAttribute("hidden", "");
-            })
-            existedCmds.forEach(cmd => {
-                document.getElementById(cmd).removeAttribute("hidden");
-            })
-        }
+      }
+      document.getElementById("CategoryBtnAll").click();
     </script>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</body>
-
+  </body>
 </html>
