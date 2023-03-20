@@ -145,7 +145,6 @@ hr {
   color: rgb(219, 219, 219);
 }
 
-/* CSS for a sample button */
 .btn {
   background-color: #4856ee;
   color: #fff;
@@ -163,7 +162,6 @@ hr {
 
 .btn:hover {
   background-color: #3c48c5;
-  transform: translateY(-2px);
 }
 
 .btn:focus {

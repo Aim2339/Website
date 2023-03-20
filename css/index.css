@@ -67,6 +67,22 @@ hr {
   color: #fff;
   margin-left: 9px;
 }
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 4px solid #46edf2;
+  border-radius: 100%;
+  width: 20%;
+  height: 20%;
+  -webkit-transform: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+.avatar:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg) 
+}
 
 ::-webkit-scrollbar {
   width: 10px;
