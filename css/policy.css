@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --description-color: rgb(207, 207, 207);
+  --main-color: #4856ee;
+  --secondary-color: #626ffd;
+  --discord-color: #5865f2;
+  --background-main-color: #212529;
+  --card-background: #2a2d31;
+}
+
+
+body {
+  background: var(--background-main-color);
+  border-radius: 5px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  animation: topToDown 1.5s ease-in;
+}
+.dropdown-menu {
+    background-color: #212529;
+    border: none;
+  }
+  
+  .dropdown-menu a {
+    color: #212529;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #e9ecef;
+    color: #e9ecef;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+.active {
+  text-decoration: underline;
+}
+
+.navbar-logo {
+  position: relative;
+  bottom: 6px;
+}
+
+.top-section {
+  margin-top: 13%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3c48c5;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(219, 219, 219);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(219, 219, 219);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(219, 219, 219);
+}
