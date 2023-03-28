@@ -83,6 +83,12 @@ hr {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+@media only screen and (max-width: 600px) {
+  .avatar {
+    width: 45%;
+    height: 45%;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 10px;

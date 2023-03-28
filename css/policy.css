@@ -12,7 +12,6 @@
   --card-background: #2a2d31;
 }
 
-
 body {
   background: var(--background-main-color);
   border-radius: 5px;
@@ -24,23 +23,23 @@ nav {
   animation: topToDown 1.5s ease-in;
 }
 .dropdown-menu {
-    background-color: #212529;
-    border: none;
-  }
-  
-  .dropdown-menu a {
-    color: #212529;
-    text-decoration: none;
-  }
-  
-  .dropdown-menu a:hover {
-    background-color: #e9ecef;
-    color: #e9ecef;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+  background-color: #212529;
+  border: none;
+}
+
+.dropdown-menu a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e9ecef;
+  color: #e9ecef;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 .active {
   text-decoration: underline;
 }
