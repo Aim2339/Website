@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 100px 0;
+}
+
+h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 2px;
+}
+
+a:hover {
+  border-color: #fff;
+}
+
+button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: #1e3c72;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background: #1e3c72;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 4px solid #46edf2;
+  border-radius: 100%;
+  width: 10%;
+  height: 10%;
+  -webkit-transform: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+.avatar:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+@media only screen and (max-width: 600px) {
+  .avatar {
+    width: 45%;
+    height: 45%;
+  }
+}
