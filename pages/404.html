@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Error Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+      body {
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 100px 0;
+      }
+
+      h1 {
+        font-size: 72px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+      }
+
+      p {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 2px solid rgba(255,255,255,0.5);
+        padding-bottom: 2px;
+      }
+
+      a:hover {
+        border-color: #fff;
+      }
+
+      button {
+        background: #fff;
+        border: none;
+        padding: 10px 20px;
+        color: #1e3c72;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      button:hover {
+        background: #1e3c72;
+        color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Oops! 404 Error</h1>
+    <p>The page you're looking for cannot be found.</p>
+    <button onclick="window.history.back()">Go back</button>
+    <br /><br />
+    <a href="/">Back to Homepage</a>
+  </body>
+</html>
