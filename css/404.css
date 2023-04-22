@@ -3,7 +3,7 @@ body {
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 
 h1 {
@@ -48,25 +48,6 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  border: 4px solid #46edf2;
-  border-radius: 100%;
-  width: 10%;
-  height: 10%;
-  -webkit-transform: -webkit-transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out;
-}
-.avatar:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-@media only screen and (max-width: 600px) {
-  .avatar {
-    width: 45%;
-    height: 45%;
-  }
-}
+
+
+
