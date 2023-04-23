@@ -126,3 +126,49 @@ input[type="submit"]:hover {
   font-size: 13px;
   opacity: 0.6;
 }
+
+#contact {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact-method {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #333;
+  border: 2px solid #e24d2c;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0px 0px 20px #111;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contact-method i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.contact-method p {
+  font-size: 1.22;
+}
+
+.contact-method p a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+
+.contact-method p a:hover {
+  border-bottom: 1px solid transparent;
+}
