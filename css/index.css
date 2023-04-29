@@ -26,6 +26,9 @@
 
 .footer-clean ul a:hover {
   opacity: 1;
+  text-decoration: none;
+  border-bottom: 2px solid #4e73df;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-clean .item.social {
@@ -67,6 +70,10 @@ hr {
   color: #fff;
   margin-left: 9px;
 }
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .avatar {
   display: block;
   margin-left: auto;

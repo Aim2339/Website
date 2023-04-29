@@ -120,6 +120,9 @@ nav {
 
 .footer-clean ul a:hover {
   opacity: 1;
+  text-decoration: none;
+  border-bottom: 2px solid #4e73df;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-clean .item.social {
