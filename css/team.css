@@ -39,7 +39,8 @@ body {
 
 /* Glowing cards on hover */
 .card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(72, 86, 238, 0.5);
   transform: translateY(-4px);
 }
@@ -169,7 +170,9 @@ hr {
 
 .btn:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #4856ee;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #4856ee;
 }
 
 .card {

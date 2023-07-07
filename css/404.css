@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: linear-gradient(to top, #f50cf1, #2a5298);
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+  color: #ffe825;
   font-size: 72px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -19,9 +20,9 @@ p {
 }
 
 a {
-  color: #fff;
+  color: #ffe825;
   text-decoration: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #ffe825;
   padding-bottom: 2px;
 }
 
@@ -30,7 +31,7 @@ a:hover {
 }
 
 button {
-  background: #fff;
+  background: #ffe825;
   border: none;
   padding: 10px 20px;
   color: #1e3c72;
@@ -43,7 +44,7 @@ button {
 }
 
 button:hover {
-  background: #1e3c72;
-  color: #fff;
+  background: #ffe825;
+  color: #1e3c72;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
